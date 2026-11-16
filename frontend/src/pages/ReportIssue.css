@@ -1,0 +1,277 @@
+.report-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #172033;
+}
+
+.report-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 6%;
+  background: #102a43;
+  color: white;
+  gap: 30px;
+}
+
+.report-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.report-brand-mark {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: white;
+  color: #102a43;
+  font-weight: 800;
+}
+
+.report-header-text {
+  flex: 1;
+}
+
+.report-header-text span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.report-header-text h1 {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+.report-back-button {
+  margin-left: auto;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.report-back-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-2px);
+}
+
+.report-content {
+  width: min(900px, 90%);
+  margin: 50px auto;
+}
+
+.report-intro {
+  margin-bottom: 35px;
+}
+
+.report-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #287d62;
+}
+
+.report-intro h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.report-intro h2 span {
+  color: #287d62;
+}
+
+.report-intro > p:last-child {
+  max-width: 700px;
+  color: #687386;
+  line-height: 1.7;
+}
+
+.report-form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.form-section {
+  margin-bottom: 35px;
+}
+
+.form-section-heading {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.form-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #287d62;
+}
+
+.form-section-heading h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.form-section-heading p {
+  margin: 0;
+  color: #7a8494;
+  font-size: 14px;
+}
+
+.report-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.report-input-group label span,
+.report-form-footer p span {
+  color: #d64545;
+}
+
+.report-input-group textarea,
+.report-input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce2e9;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.report-input-group textarea {
+  resize: vertical;
+}
+
+.report-input-group textarea:focus,
+.report-input-group input:focus {
+  border-color: #287d62;
+}
+
+.character-count {
+  text-align: right;
+  margin-top: 6px;
+  color: #8a94a3;
+  font-size: 12px;
+}
+
+.location-input-wrapper {
+  position: relative;
+}
+
+.location-input-wrapper input {
+  padding-left: 42px;
+}
+
+.location-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-help {
+  margin-top: 7px;
+  color: #8a94a3;
+  font-size: 12px;
+}
+
+.ai-preview {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  margin: 10px 0 30px;
+  border-radius: 12px;
+  background: #f0f7f4;
+}
+
+.ai-preview-icon {
+  font-size: 22px;
+  color: #287d62;
+}
+
+.ai-preview strong {
+  font-size: 15px;
+}
+
+.ai-preview p {
+  margin: 6px 0 0;
+  color: #687386;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.report-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-form-footer p {
+  color: #7a8494;
+  font-size: 13px;
+}
+
+.submit-report-button {
+  border: none;
+  border-radius: 9px;
+  padding: 13px 22px;
+  background: #287d62;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-report-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.submit-report-button span {
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .report-header {
+    flex-wrap: wrap;
+  }
+
+  .report-back-button {
+    margin-left: 0;
+  }
+
+  .report-intro h2 {
+    font-size: 30px;
+  }
+
+  .report-form-card {
+    padding: 22px;
+  }
+
+  .report-form-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+}
